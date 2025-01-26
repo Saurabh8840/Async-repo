@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body{
+            background-image: url('./shiva.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial,sans-serif;
+            display:flex;
+            justify-content: centre;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+
+        }
+        .weather-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        #weather-data {
+            margin-top: 20px;
+            margin-left: 5%;
+            color:white;
+            font-size: 18px;
+            font-weight: bold;
+
+            
+        }
+        #main{
+            
+
+            
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div id="main">
+        <h2>Weather App</h2>
+        <input type=" text" id="city" placeholder="Enter city "/>
+        <button onclick="getWeather()">Get Weather</button>
+
+        <div id="weather-data"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
